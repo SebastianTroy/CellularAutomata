@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1147</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="controlsContainer" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="speedBox">
+         <property name="title">
+          <string>Speed</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QRadioButton" name="speedPaused">
+            <property name="text">
+             <string>Paused</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="speed1Hz">
+            <property name="text">
+             <string>1 Hz</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="speed5Hz">
+            <property name="text">
+             <string>5 Hz</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="speedMax">
+            <property name="text">
+             <string>Max</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="speedCustom">
+            <property name="text">
+             <string>Custom</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="speedCustomSpinner"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="speedStepOnce">
+            <property name="text">
+             <string>Step 1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="coloursContainer">
+         <property name="title">
+          <string>Colour</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QRadioButton" name="colourMonochrome">
+            <property name="text">
+             <string>Binary Monochrome</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">colourButtons</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="colourBinaryGradient">
+            <property name="text">
+             <string>Binary Gradient</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">colourButtons</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="colourTrichromatic">
+            <property name="text">
+             <string>Trichromatic</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">colourButtons</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="colourDumbChromatic">
+            <property name="text">
+             <string>Dumb chromatic</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">colourButtons</string>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="rulesetContainer">
+         <property name="title">
+          <string>Ruleset</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QRadioButton" name="rulesConway">
+            <property name="text">
+             <string>Conway's</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">rulesetButtons</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rulesNeuralNet">
+            <property name="text">
+             <string>Neural Network</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">rulesetButtons</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rulesMultipleNeighbourhoods">
+            <property name="text">
+             <string>Multiple Neighbourhood</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">rulesetButtons</string>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="cellValuesContainer">
+         <property name="title">
+          <string>Cell Values</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="3" column="0" colspan="2">
+           <widget class="QPushButton" name="cellsClear">
+            <property name="text">
+             <string>Clear</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QSpinBox" name="cellsHeightSpinner"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="cellsWidthLabel">
+            <property name="text">
+             <string>Width</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0" colspan="2">
+           <widget class="QGroupBox" name="randomiseContainer">
+            <property name="title">
+             <string>Randomise</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="3" column="0" colspan="2">
+              <widget class="QPushButton" name="randApply">
+               <property name="text">
+                <string>Randomise</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QDoubleSpinBox" name="randMax"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QDoubleSpinBox" name="randMin"/>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="randMaxLabel">
+               <property name="text">
+                <string>Max</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="randMinLabel">
+               <property name="text">
+                <string>Min</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="randIntegersOnly">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="randIntegersOnlyLabel">
+               <property name="text">
+                <string>Integers Only</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="cellsHeightLabel">
+            <property name="text">
+             <string>Height</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QSpinBox" name="cellsWidthSpinner"/>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="QPushButton" name="cellsSizeApplyButton">
+            <property name="text">
+             <string>Apply</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="CellularAutomata" name="cellularAutomata" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1147</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CellularAutomata</class>
+   <extends>QWidget</extends>
+   <header>CellularAutomata.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="rulesetButtons"/>
+  <buttongroup name="colourButtons"/>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>
